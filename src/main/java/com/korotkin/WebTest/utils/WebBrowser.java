@@ -45,6 +45,7 @@ public class WebBrowser {
 		
 		Runtime.getRuntime().addShutdownHook(new Thread(new Runnable() {
 		    public void run() {
+		    	driver.close();
 		    	driver.quit();
 		    }
 		}));
