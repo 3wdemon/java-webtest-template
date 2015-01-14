@@ -42,13 +42,13 @@ public class WebBrowser {
 
 		driver = new FirefoxDriver();
 		driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
-		/*
+		
 		Runtime.getRuntime().addShutdownHook(new Thread(new Runnable() {
 		    public void run() {
 		    	driver.quit();
 		    }
 		}));
-		*/
+		
 	}
 	
 	public WebDriver getDriver(){
